@@ -1,0 +1,132 @@
+
+    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <header className="text-center mb-12">
+          <img
+            className="mx-auto h-32 w-32 rounded-full object-cover"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gj-k9EsBVoKCsLKNrsdkUyxei0w4jFkBU.PNG"
+            alt="Garvit Jangid"
+          />
+          <h1 className="mt-4 text-4xl font-bold text-gray-900">Garvit Jangid</h1>
+          <p className="mt-2 text-xl text-gray-600">AI Learner</p>
+          <div className="mt-6 flex justify-center space-x-4">
+            <Button variant="outline" size="icon" asChild>
+              <a href="https://www.instagram.com/garvit6164" target="_blank" rel="noopener noreferrer">
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a href="https://www.linkedin.com/in/garvit-jangid-114444295" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a href="mailto:garvitjangid273@gmail.com">
+                <Mail className="h-5 w-5" />
+                <span className="sr-only">Email</span>
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a href="tel:+918290592537">
+                <Phone className="h-5 w-5" />
+                <span className="sr-only">Phone</span>
+              </a>
+            </Button>
+          </div>
+        </header>
+
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-12">
+          <TabsList className="grid w-full grid-cols-4">
+            <TabsTrigger value="about">About</TabsTrigger>
+            <sTrigger>
+          </TabsList>
+          <TabsContent value="about" className="mt-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>About Me</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">
+                  Hello! I'm Garvit Jangid, a passionate freelancer with a keen interest in AI and machine learning. 
+                  I have knowledge of 50+ AI tools and 50+ prompts, and I've completed the Microsoft AI course (Azure Analysis). 
+                  I've also interned and learned embedded systems (Arduino). Instead of spending time on traditional coding, 
+                  I focus on leveraging AI to create efficient solutions for myself and companies.
+                </p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="skills" className="mt-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Skills</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  data scince, autocad, microsoft intern AI engineering, embedded system(arduino) 
+                    <span key={index} className="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">
+                     
+                    </span>
+                  
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="hobbies" className="mt-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Hobbies & Interests</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                 
+                    <span key={index} className="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">
+                     
+                    </span>
+                    art and painting , cooking, dancing, district player basket ball, writting books
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="contact" className="mt-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Contact Me</CardTitle>
+                <CardDescription>Feel free to reach out if you have any questions or opportunities!</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form className="space-y-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                    <Input id="name" placeholder="Your Name" />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <Input id="email" type="email" placeholder="your@email.com" />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                    <Textarea id="message" placeholder="Your message here..." />
+                  </div>
+                  <Button type="submit">Send Message</Button>
+                </form>
+              </CardContent>
+              <CardFooter className="flex flex-col items-start space-y-2">
+                <p className="text-sm text-gray-500">Or reach me directly:</p>
+                <p className="text-sm">
+                  <Mail className="inline-block w-4 h-4 mr-2" />
+                  garvitjangid273@gmail.com
+                </p>
+                <p className="text-sm">
+                  <Phone className="inline-block w-4 h-4 mr-2" />
+                  +91 8290592537
+                </p>
+              </CardFooter>
+            </Card>
+          </TabsContent>
+        </Tabs>
+      </div>
+    </div>
+  )
+}
